@@ -11,7 +11,7 @@ import {
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/AboutUs", label: "About Us" },
+  { href: "https://www.ted.com/tedx/events/63850", label: "About Us" },
   { href: "/Ourteam", label: "Team" },
   { href: "/Partners", label: "Partners" },
   { href: "#", label: "Speakers" },
