@@ -28,8 +28,8 @@ const Navbar = () => {
     gsap
       .timeline()
       .from(box.current, { y: -300, duration: 1, ease: "back.out" })
-      .to(box.current, { width: "98%", duration: 0.6, ease: "power4.out" })
-      .to(c(".link"), { opacity: 1, stagger: 0.05 });
+      .to(box.current, { width: "98%", duration: 0.3, ease: "power4.out" })
+      .to(c(".link"), { opacity: 1, stagger: 0.001 });
   }, []);
 
   const handleMenuToggle = () => setMenuOpen((open) => !open);
