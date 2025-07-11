@@ -10,8 +10,8 @@ export const aboutUsData = [
     hv1: "What is",
     hv2: "TEDx",
     dv1: "TEDx ",
-    dv2: "Ideas Worth Spreading.",
-    p: "TEDx is a program of independently organized events licensed by TED, created in the spirit of TED’s mission — “Ideas Worth Spreading.” At TEDx events, TED Talk videos and live speakers come together to inspire deep thought and meaningful conversation. The “x” signifies a self-organized event, rooted in local communities but connected to a global movement. TEDx empowers individuals and institutions to spark dialogue, ignite innovation, and bring powerful ideas to life — right where they are.",
+    dv2: "is a program of independently organized events licensed by TED",
+    p: ", created in the spirit of TED’s mission — “Ideas Worth Spreading.” At TEDx events, TED Talk videos and live speakers come together to inspire deep thought and meaningful conversation. The “x” signifies a self-organized event, rooted in local communities but connected to a global movement. TEDx empowers individuals and institutions to spark dialogue, ignite innovation, and bring powerful ideas to life — right where they are.",
   },
   {
     hv1: "What is",

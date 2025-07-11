@@ -5,6 +5,7 @@ import {
   RiInstagramLine,
   RiLinkedinLine,
   RiMailLine,
+  RiWhatsappLine,
 } from "@remixicon/react";
 import React, { useState } from "react";
 import axios from "axios";
@@ -75,13 +76,13 @@ const Footer = () => {
             <RiInstagramLine />
           </a>
           <a
-            href="https://github.com"
+            href="https://whatsapp.com/channel/0029Vb5u2uzADTOCwup1kP3j"
             target="_blank"
             rel="noreferrer"
             className="hover:text-red-500 transition-colors duration-200"
             aria-label="GitHub"
           >
-            <RiGithubFill />
+            <RiWhatsappLine />
           </a>
           <a
             href="mailto:tcontact@tedxbitjaipur.com"
