@@ -14,7 +14,7 @@ const navLinks = [
   { href: "https://www.ted.com/tedx/events/63850", label: "About Us" },
   { href: "/Ourteam", label: "Team" },
   { href: "/Partners", label: "Partners" },
-  { href: "#", label: "Speakers" },
+  { href: "/Ourteam", label: "Speakers" },
 ];
 
 const Navbar = () => {
