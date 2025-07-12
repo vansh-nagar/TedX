@@ -58,6 +58,15 @@ const Footer = () => {
         <p className="text-xs text-gray-400 mt-4">©2025 All Rights Reserved</p>
         <div className="flex space-x-6 text-2xl mt-4">
           <a
+            href="https://www.instagram.com/tedxbitjaipur/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-red-500 transition-colors duration-200"
+            aria-label="Instagram"
+          >
+            <RiInstagramLine />
+          </a>
+          <a
             href="https://www.linkedin.com/company/tedxbitjaipur/"
             target="_blank"
             rel="noreferrer"
@@ -67,13 +76,12 @@ const Footer = () => {
             <RiLinkedinLine />
           </a>
           <a
-            href="https://www.instagram.com/tedxbitjaipur/"
-            target="_blank"
-            rel="noreferrer"
+            href="https://www.facebook.com/people/TEDx-BITJaipur/61575732881377/"
             className="hover:text-red-500 transition-colors duration-200"
-            aria-label="Instagram"
+            aria-label="Email"
+            target="_blank"
           >
-            <RiInstagramLine />
+            <RiFacebookBoxLine />
           </a>
           <a
             href="https://whatsapp.com/channel/0029Vb5u2uzADTOCwup1kP3j"
@@ -91,14 +99,6 @@ const Footer = () => {
             target="_blank"
           >
             <RiMailLine />
-          </a>
-          <a
-            href="https://www.facebook.com/people/TEDx-BITJaipur/61575732881377/"
-            className="hover:text-red-500 transition-colors duration-200"
-            aria-label="Email"
-            target="_blank"
-          >
-            <RiFacebookBoxLine />
           </a>
         </div>
         <h3 className="text-xl font-bold mt-8 mb-2 text-red-400 tracking-wide">
