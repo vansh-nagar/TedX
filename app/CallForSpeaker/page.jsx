@@ -415,6 +415,8 @@ const Page = () => {
           lived experience that the world needs to hear — we welcome your story.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          {/*  insert here */}
+
           <a
             href="/CallForSpeaker"
             className="px-4 sm:px-6 py-2 shadow-md border-4 border-red-700 bg-red-700 font-bold text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
@@ -424,7 +426,7 @@ const Page = () => {
             <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
           </a>
           <a
-            href="#bottom"
+            href="mailto:speakers@tedxbitjaipur.com?subject=SPEAKER%20INQUIRY%20%7C%20TEDxBITJaipur"
             className="px-4 sm:px-6 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
             type="button"
           >
