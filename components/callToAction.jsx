@@ -26,8 +26,9 @@ const CallToAction = () => (
           and help ignite ideas worth spreading.
         </p>
       </div>
-      <a href="/Partners">
-        <button className="px-6 py-2 shadow-md mt-4 border-4 border-[#eb0028] text-white  opacity-65 rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden">
+
+      <a href="/CallForSpeaker">
+        <button className="px-6 cursor-pointer py-2 shadow-md mt-4 border-4 border-[#eb0028] text-white  opacity-65 rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden">
           Call for Speakers
           <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
         </button>
