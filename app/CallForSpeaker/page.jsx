@@ -39,7 +39,7 @@ const Page = () => {
   const accordionData = [
     {
       title: (
-        <span className="flex items-center gap-2">
+        <span className="flex items-center gap-2 ">
           <RiArrowRightLine className="text-red-600" />
           What a TEDx talk is NOT
         </span>
@@ -398,9 +398,11 @@ const Page = () => {
   return (
     <div className="flex flex-col md:flex-row min-h-screen text-[#f7dcdc] mt-[100px] p-4 sm:p-6 md:p-10 max-sm:p-1">
       {/* Left Section */}
-      <div className="flex flex-col justify-center p-4 sm:p-6 md:p-10 w-full md:w-1/2">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-red-600 font-bold mb-4">
-          APPLY TO BE A SPEAKER!
+      <div className="flex flex-col  p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white">
+        <h1 className="text-4xl sm:text-3xl md:text-4xl text-red-600 font-stretch-ultra-expanded font-bold mb-4 ">
+          <span> APPLY TO BE A</span>
+          <br />{" "}
+          <span className=" underline text-white text-7xl">SPEAKER!</span>
         </h1>
         <p className="mb-4 text-base sm:text-lg">
           If you believe in the power of ideas to move minds, shift
@@ -415,7 +417,7 @@ const Page = () => {
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <a
             href="/CallForSpeaker"
-            className="px-4 sm:px-6 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
+            className="px-4 sm:px-6 py-2 shadow-md border-4 border-red-700 bg-red-700 font-bold text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
             type="button"
           >
             Apply Now
@@ -432,7 +434,8 @@ const Page = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-10 bg-[#1a1a1a] rounded-t-3xl md:rounded-l-3xl md:rounded-t-none mt-6 md:mt-0">
-        <h2 className="text-lg sm:text-xl mb-4">
+        <img src="/banner.png" className="  rounded-2xl mb-10" alt="" />
+        <h2 className="text-lg sm:text-xl mb-4 text-white font-semibold italic">
           Please read these instructions below before applying.
         </h2>
 
@@ -448,20 +451,9 @@ const Page = () => {
 
         <div className="mt-6 text-xs sm:text-sm text-white">
           <p>
-            Got questions? Email our Speaker Coordinator at{" "}
-            <b>speakers@tedxbitjaipur.com</b>
-          </p>
-          <p className="mt-2">
-            OR EMAIL OUR CURATION TEAM AT <b>speakers@tedxbitjaipur.com</b>
-          </p>
-          <p className="mt-2 text-red-600 break-all">
-            <a
-              href="https://tedxbitjaipur.com/speakers/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://tedxbitjaipur.com/speakers/
-            </a>
+            <span className="text-2xl font-semibold">Got questions?</span>
+            <br /> Email our Curation Team at{" "}
+            <b className="text-red-500">speakers@tedxbitjaipur.com</b>
           </p>
         </div>
       </div>
