@@ -41,7 +41,7 @@ export const teamData = [
     name: "Manasvi Singh",
     role: "Tech Lead",
     team: "Tech ",
-    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1750953942/burcqkys67zajyoebrqe.jpg",
+    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1752315671/ndh1qfibpiscepddzzkc.jpg",
     linkedin: "https://www.linkedin.com/in/manasvi-singh-97b509287/",
     instagram: "https://www.instagram.com/yours_vanya/",
     email: "manasvisingh9198@gmail.com",
@@ -137,5 +137,41 @@ export const teamData = [
       "https://www.linkedin.com/in/manika-singh-b7452b290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://instagram.com/manika7272?igshid=OGQ5ZDc2ODk2ZA==",
     email: "manika.singh2626@gmail.com",
+  },
+  {
+    name: "Piyush Khatri",
+    role: "Design Team Member",
+    team: "Design",
+    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1752315485/ovnhvb7lkzsjbbunaot1.jpg", // Add image URL if available
+    linkedin: "",
+    instagram: "",
+    email: "bam25003.24@bitmesra.ac.in",
+  },
+  {
+    name: "Ayan Girdh",
+    role: "Design Team Member",
+    team: "Design",
+    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1752315199/q8d7cvqj5dimnie0mihz.jpg", // Add image URL if available
+    linkedin: "",
+    instagram: "",
+    email: "ayangirdh25@gmail.com",
+  },
+  {
+    name: "Sarvodaya Trivedi",
+    role: "Design Team Member",
+    team: "Design",
+    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1752315936/tkgvji21rgccdey1jczi.jpg", // Add image URL if available
+    linkedin: "",
+    instagram: "",
+    email: "udaifunn@gmail.com",
+  },
+  {
+    name: "Parth Parashar",
+    role: "Design Team Member",
+    team: "Design",
+    img: "http://res.cloudinary.com/dz12pywzs/image/upload/v1752315123/b55ef66puf8mtlkojkk0.jpg", // Add image URL if available
+    linkedin: "",
+    instagram: "",
+    email: "parth21parashar@gmail.com",
   },
 ];

@@ -81,7 +81,7 @@ const TeamCard = ({ member }) => (
     <img
       src={member.img}
       alt={member.name}
-      className="w-full h-64 object-cover"
+      className="w-full h-64 object-cover grayscale"
     />
     <div className="p-6">
       <h3 className="text-xl font-bold">{member.name}</h3>

@@ -14,7 +14,7 @@ const navLinks = [
   { href: "https://www.ted.com/tedx/events/63850", label: "About Us" },
   { href: "/Ourteam", label: "Team" },
   { href: "/Partners", label: "Partners" },
-  { href: "/CallForSpeaker", label: "Speakers" },
+  { href: "#", label: "Speakers" },
 ];
 
 const Navbar = () => {
@@ -61,7 +61,8 @@ const Navbar = () => {
               </a>
             ))}
             <button
-              className="link opacity-0 px-4 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-10 transition-all duration-300 overflow-hidden"
+              onClick={() => (window.location.href = "/CallForSpeaker")}
+              className="link cursor-pointer opacity-0 px-4 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-10 transition-all duration-300 overflow-hidden"
               type="button"
             >
               Call for Speakers
@@ -93,13 +94,16 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <button
+
+          <a
+            href="/CallForSpeaker"
             className="px-6 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
+            onClick={() => setMenuOpen(false)}
             type="button"
           >
             Call for Speakers
             <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-          </button>
+          </a>
         </div>
       )}
     </>
