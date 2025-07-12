@@ -399,7 +399,7 @@ const Page = () => {
     <div className="flex flex-col md:flex-row min-h-screen text-[#f7dcdc] mt-[100px] p-4 sm:p-6 md:p-10 max-sm:p-1">
       {/* Left Section */}
       <div className="flex flex-col  p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white">
-        <h1 className="text-4xl sm:text-3xl md:text-4xl text-red-600 font-stretch-ultra-expanded font-bold mb-4 ">
+        <h1 className="text-4xl sm:text-3xl md:text-4xl text-red-600 font-bold mb-4 ">
           <span> APPLY TO BE A</span>
           <br />{" "}
           <span className=" underline text-white text-7xl">SPEAKER!</span>
@@ -424,7 +424,7 @@ const Page = () => {
             <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
           </a>
           <a
-            href="/CallForSpeaker"
+            href="#bottom"
             className="px-4 sm:px-6 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
             type="button"
           >
@@ -453,7 +453,9 @@ const Page = () => {
           <p>
             <span className="text-2xl font-semibold">Got questions?</span>
             <br /> Email our Curation Team at{" "}
-            <b className="text-red-500">speakers@tedxbitjaipur.com</b>
+            <a href="mailto:speakers@tedxbitjaipur.com?subject=SPEAKER%20INQUIRY%20%7C%20TEDxBITJaipur">
+              <b className="text-red-500">speakers@tedxbitjaipur.com</b>
+            </a>
           </p>
         </div>
       </div>
