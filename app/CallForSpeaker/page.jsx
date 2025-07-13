@@ -46,19 +46,23 @@ const Page = () => {
       ),
       content: (
         <div className="space-y-2">
-          <p>
-            TEDx talks are <b>not</b> motivational speeches.
-          </p>
-          <p>
-            TEDx talks are not just storytelling about a personal journey. If
-            you are including your personal story, it must lead to a new
-            surprising idea or concept to qualify for consideration.
-          </p>
-          <p>
-            TEDx talks are not a promotional opportunity to showcase your
-            company or brand.
-          </p>
-          <p>TEDx talks are not religious or political.</p>
+          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
+            <li>
+              TEDx talks are <b>not</b> motivational speeches.
+            </li>
+            <li>
+              TEDx talks are not just storytelling about a personal journey.
+              If you are including your personal story, it must lead to a new
+              surprising idea or concept to qualify for consideration.
+            </li>
+            <li>
+              TEDx talks are not a promotional opportunity to showcase your
+              company or brand.
+            </li>
+            <li>
+              TEDx talks are not religious or political.
+            </li>
+          </ul>
         </div>
       ),
     },
@@ -379,7 +383,7 @@ const Page = () => {
       title: (
         <span className="flex items-center gap-2">
           <RiArrowRightLine className="text-red-600" />
-          TEDxLogan Circle Expectations
+          TEDxBITJaipur Expectations
         </span>
       ),
       content: <div></div>,
@@ -413,6 +417,24 @@ const Page = () => {
           curious changemakers to be a part of our 2026 speaker lineup. If
           you're a researcher, artist, entrepreneur, educator, or someone with a
           lived experience that the world needs to hear — we welcome your story.
+        </p>
+        <p className="mb-4 text-base sm:text-lg">
+          We’ve chosen a theme that threads together complexity, connection, and curiosity.
+          Want a hint? Slide into our inbox — we just might share a glimpse into the world we’re weaving.
+        </p>
+        <p className="mb-4 text-base sm:text-lg">
+          <span className="text-red text-3xl">KEY DATES:</span> 
+        </br> 
+        <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
+        <li><strong>Applications Open:</strong> July 15, 2025</li>
+        <li><strong>Last Date to Apply:</strong> August 15, 2025</li>
+        <li><strong>Shortlisting & Communication:</strong> Late August 2025</li>
+        <li><strong>Speaker Curation & Training:</strong> September – December 2025</li>
+        <li><strong>Main Event:</strong> January 2026</li>
+        </ul>
+        <p className="text-sm italic text-gray-400 mt-2">
+        *Dates are tentative and may be updated without prior notice.
+        </p>
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           {/*  insert here */}
