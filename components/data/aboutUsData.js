@@ -15,7 +15,7 @@ export const aboutUsData = [
   },
   {
     hv1: "What is",
-    hv2: "",
+    hv2: "TEDxBITJaipur",
     dv1: "TEDxBITJaipur ",
     p: " is an independently organized TEDx event hosted at Birla Institute of Technology, Mesra – Jaipur Campus. Rooted in TED’s mission of “Ideas Worth Spreading,” TEDxBITJaipur brings together curious minds, bold thinkers, and inspiring voices from all walks of life. Through powerful talks, engaging stories, and meaningful dialogue, we aim to spark change, ignite passion, and build a community driven by ideas. It’s more than an event — it’s a movement, right here on our campus.",
   },
