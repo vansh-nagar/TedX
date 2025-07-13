@@ -46,19 +46,23 @@ const Page = () => {
       ),
       content: (
         <div className="space-y-2">
-          <p>
-            TEDx talks are <b>not</b> motivational speeches.
-          </p>
-          <p>
-            TEDx talks are not just storytelling about a personal journey. If
-            you are including your personal story, it must lead to a new
-            surprising idea or concept to qualify for consideration.
-          </p>
-          <p>
-            TEDx talks are not a promotional opportunity to showcase your
-            company or brand.
-          </p>
-          <p>TEDx talks are not religious or political.</p>
+          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
+            <li>
+              TEDx talks are <b>not</b> motivational speeches.
+            </li>
+            <li>
+              TEDx talks are not just storytelling about a personal journey.
+              If you are including your personal story, it must lead to a new
+              surprising idea or concept to qualify for consideration.
+            </li>
+            <li>
+              TEDx talks are not a promotional opportunity to showcase your
+              company or brand.
+            </li>
+            <li>
+              TEDx talks are not religious or political.
+            </li>
+          </ul>
         </div>
       ),
     },
