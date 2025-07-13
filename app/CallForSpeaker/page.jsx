@@ -46,19 +46,21 @@ const Page = () => {
       ),
       content: (
         <div className="space-y-2">
-          <p>
-            TEDx talks are <b>not</b> motivational speeches.
-          </p>
-          <p>
-            TEDx talks are not just storytelling about a personal journey. If
-            you are including your personal story, it must lead to a new
-            surprising idea or concept to qualify for consideration.
-          </p>
-          <p>
-            TEDx talks are not a promotional opportunity to showcase your
-            company or brand.
-          </p>
-          <p>TEDx talks are not religious or political.</p>
+          <ul className="list-disc pl-5">
+            <li>
+              TEDx talks are <b>not</b> motivational speeches.
+            </li>
+            <li>
+              TEDx talks are not just storytelling about a personal journey. If
+              you are including your personal story, it must lead to a new
+              surprising idea or concept to qualify for consideration.
+            </li>
+            <li>
+              TEDx talks are not a promotional opportunity to showcase your
+              company or brand.
+            </li>
+            <li>TEDx talks are not religious or political.</li>
+          </ul>
         </div>
       ),
     },
@@ -184,6 +186,26 @@ const Page = () => {
             <li>No religious agenda</li>
             <li>No bad science</li>
           </ul>
+          <p>
+            <a
+              href="https://www.ted.com/participate/organize-a-local-tedx-event/tedx-organizer-guide/speakers-program/prepare-your-speaker/tedx-content-guidelines-fact-checking-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 underline"
+            >
+              See TEDx Content Guidelines here.
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://pb-assets.tedcdn.com/system/baubles/files/000/008/465/original/TEDx_Copyright_Guidelines_final.pdf?1588610363"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 underline"
+            >
+              See TEDx Copyright Guidelines (PDF)
+            </a>
+          </p>
         </div>
       ),
     },
@@ -341,7 +363,15 @@ const Page = () => {
             copyrighted materials when applicable. TED cannot assist with this
             process nor act as a consultant on individual cases. Read these
             Copyright Guidelines to ensure as speaker you clear everything with
-            permission before we record your TEDx talk.
+            permission before we record your TEDx talk.{" "}
+            <a
+              href="https://pb-assets.tedcdn.com/system/baubles/files/000/008/465/original/TEDx_Copyright_Guidelines_final.pdf?1588610363"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 underline"
+            >
+              (TEDx Copyright Guidelines PDF)
+            </a>
           </p>
           <p>
             <b>Talks are thoughtful, not divisive:</b>
@@ -379,10 +409,39 @@ const Page = () => {
       title: (
         <span className="flex items-center gap-2">
           <RiArrowRightLine className="text-red-600" />
-          TEDxLogan Circle Expectations
+          What We Expect From Our Speakers
         </span>
       ),
-      content: <div></div>,
+      content: (
+        <div className="space-y-4">
+          <p>
+            At <b>TEDxBITJaipur</b>, a talk is more than a performance — it’s a
+            process of thoughtful discovery, crafted with care and intention.
+          </p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>
+              You’ll join us on stage in January 2026, delivering a talk that
+              speaks to both heart and mind.
+            </li>
+            <li>Talks should reflect clarity, originality, and purpose.</li>
+            <li>
+              Be open — to collaboration, coaching, and creative dialogue.
+            </li>
+            <li>
+              Attend speaker curation and development sessions from September to
+              December 2025.
+            </li>
+            <li>
+              Follow the spirit of TED: No promotion. No politics. Just ideas
+              worth spreading.
+            </li>
+            <li>
+              Above all, bring your most authentic self to the stage — the rest,
+              we’ll build together.
+            </li>
+          </ul>
+        </div>
+      ),
     },
     {
       title: (
@@ -391,7 +450,65 @@ const Page = () => {
           How to Prepare For Your Talk
         </span>
       ),
-      content: <div></div>,
+      content: (
+        <div className="space-y-2">
+          <p>
+            At TEDxBITJaipur, we’re building a stage for voices that often go
+            unheard — the thinkers, the tinkerers, the quiet revolutionaries. We
+            seek speakers who bring not just ideas, but the courage to reframe
+            perspectives and move hearts. Whether you’re a first-time speaker or
+            a seasoned storyteller, what matters most is the power of your idea
+            and your willingness to shape it with intention.
+          </p>
+          <p>
+            TEDx events, including ours, are fully volunteer-led — powered by
+            passion, not profit. Every speaker is guided through a thoughtful
+            curation journey to ensure their talk reaches its full potential.
+          </p>
+          <p>
+            <b>
+              Before submitting your application, here are a few important
+              notes:
+            </b>
+          </p>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>
+              Please take time to understand and honor all TED, TEDx, and
+              TEDxBITJaipur content guidelines.
+            </li>
+            <li>
+              Familiarize yourself with the spirit of our event theme (P.S. we
+              might share a hint if you message us!) and consider how your idea
+              might resonate with the theme’s depth.
+            </li>
+            <li>
+              Ask yourself: <i>“Why me?”</i> and <i>“Why now?”</i> What makes
+              your story or insight urgent, fresh, and transformative in this
+              moment?
+            </li>
+            <li>
+              We encourage applicants with a connection to Jaipur or the broader
+              Indian ecosystem, though applications are welcome from everywhere.
+            </li>
+            <li>
+              Know that submitting your talk idea is only the beginning. If
+              selected, you’ll work closely with our curation team to develop,
+              refine, and rehearse your talk.
+            </li>
+            <li>
+              We receive a high volume of applications and review each with
+              care. While we may not be able to respond to every entry
+              individually, please know that your voice matters and is
+              appreciated.
+            </li>
+          </ul>
+          <p>
+            Remember, TEDxBITJaipur isn’t just about the talk — it’s about the
+            idea, the energy, and the community you help create. We’re excited
+            to see what you’ll bring to the stage.
+          </p>
+        </div>
+      ),
     },
   ];
 
@@ -413,6 +530,7 @@ const Page = () => {
           curious changemakers to be a part of our 2026 speaker lineup. If
           you're a researcher, artist, entrepreneur, educator, or someone with a
           lived experience that the world needs to hear — we welcome your story.
+          x{" "}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           {/*  insert here */}
