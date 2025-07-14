@@ -364,14 +364,6 @@ const Page = () => {
             process nor act as a consultant on individual cases. Read these
             Copyright Guidelines to ensure as speaker you clear everything with
             permission before we record your TEDx talk.{" "}
-            <a
-              href="https://pb-assets.tedcdn.com/system/baubles/files/000/008/465/original/TEDx_Copyright_Guidelines_final.pdf?1588610363"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 underline"
-            >
-              (TEDx Copyright Guidelines PDF)
-            </a>
           </p>
           <p>
             <b>Talks are thoughtful, not divisive:</b>
@@ -385,8 +377,22 @@ const Page = () => {
             <b>Speaker content guidelines:</b>
             <ul className="list-disc ml-6">
               <li>
-                All talks should comply with TEDx Content Guidelines and
-                Copyright Guidelines.
+                All talks should comply with TEDx{" "}
+                <a
+                  href="http://ted.com/participate/organize-a-local-tedx-event/tedx-organizer-guide/speakers-program/prepare-your-speaker/tedx-content-guidelines-fact-checking-guide"
+                  target="_blank"
+                  className="text-red-600 underline"
+                >
+                  Content Guidelines
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://pb-assets.tedcdn.com/system/baubles/files/000/008/465/original/TEDx_Copyright_Guidelines_final.pdf?1588610363"
+                  target="_blank"
+                  className="text-red-600 underline"
+                >
+                  Copyright Guidelines
+                </a>{" "}
               </li>
               <li>
                 If a talk does not follow the Content Guidelines or Copyright
@@ -530,8 +536,40 @@ const Page = () => {
           curious changemakers to be a part of our 2026 speaker lineup. If
           you're a researcher, artist, entrepreneur, educator, or someone with a
           lived experience that the world needs to hear — we welcome your story.
-          x{" "}
         </p>
+
+        <p className="mb-4 text-base sm:text-lg">
+          We’ve chosen a theme that threads together complexity, connection, and
+          curiosity. Want a hint? Slide into our inbox — we just might share a
+          glimpse into the world we’re weaving.
+        </p>
+        <p className="mb-4 text-base sm:text-lg">
+          <span className="text-red text-3xl text-red-500  font-bold">
+            KEY DATES:
+          </span>
+          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
+            <li>
+              <strong>Applications Open:</strong> July 15, 2025
+            </li>
+            <li>
+              <strong>Last Date to Apply:</strong> August 15, 2025
+            </li>
+            <li>
+              <strong>Shortlisting & Communication:</strong> Late August 2025
+            </li>
+            <li>
+              <strong>Speaker Curation & Training:</strong> September – December
+              2025
+            </li>
+            <li>
+              <strong>Main Event:</strong> January 2026
+            </li>
+          </ul>
+        </p>
+        <p className="text-sm italic text-gray-400 ">
+          *Dates are tentative and may be updated without prior notice.
+        </p>
+
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           {/*  insert here */}
 

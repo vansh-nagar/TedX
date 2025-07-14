@@ -4,60 +4,60 @@ const SocialProof = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Daksh Gupta",
-      title: "Licensee",
+      name: "ANISH HATUA",
+      title: "TEDxBITSPilani",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750763051/ez0lfms6bmpefi9ioj1v.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/1b/2f/d6/1781718.jpeg?",
       quote:
         "TEDx completely changed how I see opportunities. I left feeling more focused and full of ideas I actually want to pursue.",
       stars: 5,
     },
     {
       id: 2,
-      name: "Apoorva Singh",
-      title: "Licensee",
+      name: "Saurabh Pacheriwal",
+      title: "TEDxSuratSalon",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750930983/wv2jitiwacbikqentcqz.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/1b/9c/b3/1809587.jpeg?s",
       quote:
         "I went in looking for inspiration, and came out with clarity. TEDx made me believe in my potential again.",
       stars: 4,
     },
     {
       id: 3,
-      name: "Chhavi Sharma",
-      title: "Curation Lead",
+      name: "Ameya Paratkar",
+      title: "Licensee at TEDxPune",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750763924/bkbd6ac2mnh0qrug0ci1.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/18/e6/ee/1631982.jpeg?",
       quote:
         "The speakers weren’t just inspiring — they were relatable. It felt like they were speaking *to* us, not *at* us.",
       stars: 5,
     },
     {
       id: 4,
-      name: "Vedanshi Goyal",
-      title: "Curation Co-Lead",
+      name: "Takayuki Mitsugi",
+      title: "TEDxTokyo",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750763939/sb8su4alppleyw7tztep.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/0d/a3/1c/893724.jpeg?",
       quote:
         "Every session sparked a new idea in my mind. It wasn’t just talks — it was a turning point.",
       stars: 4,
     },
     {
       id: 5,
-      name: "Manasvi Singh",
-      title: "Tech Lead",
+      name: "Clare Roberts-Molloy",
+      title: "TEDxWolverhampton",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750953942/burcqkys67zajyoebrqe.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/19/29/dc/1649116.jpeg?",
       quote:
         "TEDx gave me a glimpse of where innovation meets action. It’s an event that every student should experience.",
       stars: 5,
     },
     {
       id: 6,
-      name: "Vansh Nagar",
-      title: "Tech Co-Lead",
+      name: "Richard Greene",
+      title: "TEDxSanDiego",
       image:
-        "http://res.cloudinary.com/dz12pywzs/image/upload/v1750900854/fbxhdsrrtzqybjfu2a07.jpg",
+        "https://pi.tedcdn.com/r/s3.amazonaws.com/ted.conferences.profiles/00/00/1f/d0/07/2084871.jpeg?",
       quote:
         "From mental health to tech to storytelling — the diversity of ideas blew me away. I felt seen.",
       stars: 5,
@@ -81,7 +81,7 @@ const SocialProof = () => {
             <img
               src={t.image}
               alt={t.name}
-              className="w-20 h-20 rounded-full object-cover  shadow mb-4"
+              className="w-20 h-20 rounded-full object-cover  shadow mb-4 grayscale"
             />
             <div className="font-medium  text-lg text-white mb-0.5">
               ✦ {t.name} ✦
@@ -116,7 +116,7 @@ const SocialProof = () => {
             <img
               src={t.image}
               alt={t.name}
-              className="w-20 h-20 rounded-full object-cover  shadow mb-4"
+              className="w-20 h-20 rounded-full object-cover  shadow mb-4 grayscale"
             />
             <div className=" text-lg text-white mb-0.5 font-medium  ">
               ✦ {t.name} ✦{" "}
