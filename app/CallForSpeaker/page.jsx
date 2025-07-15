@@ -312,7 +312,7 @@ const Page = () => {
           </p>
           <p>
             <a
-              href="https://www.ted.com/participate/organize-a-local-tedx-event/tedx-organizer-guide/speakers-program/fact-checking"
+              href="https://www.ted.com/participate/organize-a-local-tedx-event/tedx-organizer-guide/speakers-program/prepare-your-speaker/tedx-fact-checking-guide"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-600 underline"
