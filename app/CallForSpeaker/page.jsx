@@ -574,7 +574,8 @@ const Page = () => {
           {/*  insert here */}
 
           <a
-            href="/CallForSpeaker"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfcDk9BrCnCN_s_b7gVw2VFBks80Dw-sKUWOgVgXeKeVOtMog/viewform?usp=dialog"
+            target="_blank"
             className="px-4 sm:px-6 py-2 shadow-md border-4 border-red-700 bg-red-700 font-bold text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
             type="button"
           >
