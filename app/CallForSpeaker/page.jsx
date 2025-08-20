@@ -552,7 +552,10 @@ const Page = () => {
               <strong>Applications Open:</strong> July 15, 2025
             </li>
             <li>
-              <strong>Last Date to Apply:</strong> August 15, 2025
+              <strong>Last Date to Apply:</strong> August 30, 2025 - {""}
+              <span className="animate-pulse shadow-red-600 text-red-500 font-bold">
+                Extended
+              </span>
             </li>
             <li>
               <strong>Shortlisting & Communication:</strong> Late August 2025

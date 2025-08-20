@@ -17,21 +17,6 @@ const HeroSec = () => {
   const aboutUsDivRefs = useRef([]);
   const StagDivRef = useRef(null);
 
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: level2Ref.current,
-        start: "top 80%",
-        end: "bottom 20%",
-        scrub: 1,
-      },
-    });
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
   return (
     <div
       ref={mainRef}
