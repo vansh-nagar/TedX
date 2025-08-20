@@ -44,7 +44,7 @@ const HeroSec = () => {
         ref={videoRef}
         muted
         loop
-        playsInline
+        autoPlay
         className="w-[90vw]  object-cover gradient rounded-3xl shadow-xl backdrop-blur-xs"
         src="http://res.cloudinary.com/dz12pywzs/video/upload/v1751637768/znzhifks76yy8bgvgikn.mp4"
       ></video>
