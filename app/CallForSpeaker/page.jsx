@@ -1,47 +1,20 @@
 "use client";
 import { RiArrowRightLine } from "@remixicon/react";
-import React, { useState } from "react";
-
-const AccordionItem = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border-b border-[#444]">
-      <button
-        className="w-full text-left px-4 py-3 text-white bg-[#2b2b2b] hover:bg-[#3b3b3b] transition duration-300 flex items-center gap-2"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen}
-      >
-        <span
-          className={`transition-transform duration-300 ${
-            isOpen ? "-rotate-90" : "rotate-0"
-          }`}
-        >
-          <RiArrowRightLine className="text-red-600" />
-        </span>
-        <span>{title.props.children.slice(1)}</span>
-      </button>
-      <div
-        className="overflow-hidden transition-all duration-500"
-        style={{
-          maxHeight: isOpen ? 999 : 0,
-          opacity: isOpen ? 1 : 0,
-        }}
-      >
-        <div className="bg-[#3a3a3a] text-white px-4 py-2">{content}</div>
-      </div>
-    </div>
-  );
-};
+import React from "react";
+import { WavyBackground } from "@/components/ui/wavy-background";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Page = () => {
-  // Updated accordionData with detailed content
   const accordionData = [
     {
       title: (
         <span className="flex items-center gap-2 ">
-          <RiArrowRightLine className="text-red-600" />
-          What a TEDx talk is NOT
+          .What a TEDx talk is NOT
         </span>
       ),
       content: (
@@ -66,10 +39,7 @@ const Page = () => {
     },
     {
       title: (
-        <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
-          What is a TEDx Talk?
-        </span>
+        <span className="flex items-center gap-2"> What is a TEDx Talk?</span>
       ),
       content: (
         <div className="space-y-2">
@@ -109,10 +79,7 @@ const Page = () => {
     },
     {
       title: (
-        <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
-          Types of TEDx Talks
-        </span>
+        <span className="flex items-center gap-2"> Types of TEDx Talks</span>
       ),
       content: (
         <div>
@@ -159,7 +126,7 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
+          {" "}
           TEDx Content Guidelines
         </span>
       ),
@@ -210,12 +177,7 @@ const Page = () => {
       ),
     },
     {
-      title: (
-        <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
-          No Bad Science
-        </span>
-      ),
+      title: <span className="flex items-center gap-2"> No Bad Science</span>,
       content: (
         <div className="space-y-2">
           <p>
@@ -291,7 +253,6 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
           TEDx Fact-Checking Guide
         </span>
       ),
@@ -326,7 +287,6 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
           TEDx Speaker Expectation by TED
         </span>
       ),
@@ -414,7 +374,6 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
           What We Expect From Our Speakers
         </span>
       ),
@@ -452,7 +411,6 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          <RiArrowRightLine className="text-red-600" />
           How to Prepare For Your Talk
         </span>
       ),
@@ -520,8 +478,9 @@ const Page = () => {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen text-[#f7dcdc] mt-[100px] p-4 sm:p-6 md:p-10 max-sm:p-1">
+      <WavyBackground className="absolute inset-0 -z-10" />
       {/* Left Section */}
-      <div className="flex flex-col  p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white">
+      <div className="flex flex-col p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white z-50 mix-blend-difference">
         <h1 className="text-4xl sm:text-3xl md:text-4xl text-red-600 font-bold mb-4 ">
           <span> APPLY TO BE A</span>
           <br />{" "}
@@ -537,14 +496,13 @@ const Page = () => {
           you're a researcher, artist, entrepreneur, educator, or someone with a
           lived experience that the world needs to hear — we welcome your story.
         </p>
-
         <p className="mb-4 text-base sm:text-lg">
           We’ve chosen a theme that threads together complexity, connection, and
           curiosity. Want a hint? Slide into our inbox — we just might share a
           glimpse into the world we’re weaving.
         </p>
         <p className="mb-4 text-base sm:text-lg">
-          <span className="text-red text-3xl text-red-500  font-bold">
+          <span className="text-red text-3xl text-red-500 font-bold">
             KEY DATES:
           </span>
           <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -552,7 +510,7 @@ const Page = () => {
               <strong>Applications Open:</strong> July 15, 2025
             </li>
             <li>
-              <strong>Last Date to Apply:</strong> August 30, 2025 - {""}
+              <strong>Last Date to Apply:</strong> August 30, 2025 -{" "}
               <span className="animate-pulse shadow-red-600 text-red-500 font-bold">
                 Extended
               </span>
@@ -572,10 +530,7 @@ const Page = () => {
         <p className="text-sm italic text-gray-400 ">
           *Dates are tentative and may be updated without prior notice.
         </p>
-
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          {/*  insert here */}
-
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfcDk9BrCnCN_s_b7gVw2VFBks80Dw-sKUWOgVgXeKeVOtMog/viewform?usp=dialog"
             target="_blank"
@@ -595,22 +550,26 @@ const Page = () => {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-10 bg-[#1a1a1a] rounded-t-3xl md:rounded-l-3xl md:rounded-t-none mt-6 md:mt-0">
-        <img src="/banner.png" className="  rounded-2xl mb-10" alt="" />
+      <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-10 bg-[#1a1a1a]/30 backdrop-blur-xl rounded-t-3xl md:rounded-l-3xl md:rounded-t-none mt-6 md:mt-0 z-50">
+        <img src="/banner.png" className="rounded-2xl mb-10" alt="" />
         <h2 className="text-lg sm:text-xl mb-4 text-white font-semibold italic">
           Please read these instructions below before applying.
         </h2>
-
         <div className="space-y-2">
-          {accordionData.map((item, idx) => (
-            <AccordionItem
-              key={idx}
-              title={item.title}
-              content={item.content}
-            />
-          ))}
+          <Accordion type="single" collapsible className="w-full">
+            {accordionData.map((item, idx) => (
+              <AccordionItem key={idx} value={`item-${idx}`}>
+                <AccordionTrigger>
+                  <span className="flex items-center gap-2">
+                    <RiArrowRightLine className="text-red-600" />
+                    {item.title.props.children.slice(1)}
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent>{item.content}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
-
         <div className="mt-6 text-xs sm:text-sm text-white">
           <p>
             <span className="text-2xl font-semibold">Got questions?</span>
