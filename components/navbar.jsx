@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="flex justify-center p-4 max-sm:p-0">
         <div
           ref={box}
-          className="h-20 w-20 flex justify-between px-6 items-center sm:top-4 fixed z-50 gradient md:rounded-3xl shadow-xl backdrop-blur-xs"
+          className="h-20 w-20 flex justify-between px-6 items-center sm:top-4 fixed z-[1000] gradient md:rounded-3xl shadow-xl backdrop-blur-xs"
         >
           <a href="/" className="cursor-pointer">
             <div className="link flex items-center font-bold text-xl text-white opacity-0">

@@ -253,7 +253,7 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          TEDx Fact-Checking Guide
+          .TEDx Fact-Checking Guide
         </span>
       ),
       content: (
@@ -287,7 +287,7 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          TEDx Speaker Expectation by TED
+          .TEDx Speaker Expectation by TED
         </span>
       ),
       content: (
@@ -374,7 +374,7 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          What We Expect From Our Speakers
+          .What We Expect From Our Speakers
         </span>
       ),
       content: (
@@ -411,7 +411,7 @@ const Page = () => {
     {
       title: (
         <span className="flex items-center gap-2">
-          How to Prepare For Your Talk
+          .How to Prepare For Your Talk
         </span>
       ),
       content: (
@@ -556,7 +556,7 @@ const Page = () => {
           Please read these instructions below before applying.
         </h2>
         <div className="space-y-2">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full text-white">
             {accordionData.map((item, idx) => (
               <AccordionItem key={idx} value={`item-${idx}`}>
                 <AccordionTrigger>
