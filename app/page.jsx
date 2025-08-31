@@ -7,6 +7,7 @@ import CallToAction from "@/components/callToAction";
 import SocialProof from "@/components/socialProof";
 import { useState } from "react";
 import React from "react";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Home() {
   const [ScrollWhere, setScrollWhere] = useState(true);
@@ -34,6 +35,8 @@ export default function Home() {
 
   return (
     <>
+      <AuroraBackground className="absolute inset-0 -z-10" />
+
       <HeroSec />
       <CallToAction />
       <Benifits />

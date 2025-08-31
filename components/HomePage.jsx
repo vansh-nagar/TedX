@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutUsDiv from "./ui/aboutUsDiv";
 import { aboutUsData } from "./data/aboutUsData";
 import { useGSAP } from "@gsap/react";
+import { AuroraBackground } from "./ui/aurora-background";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +21,7 @@ const HeroSec = () => {
   return (
     <div
       ref={mainRef}
-      className="flex relative flex-col justify-center items-center w-full pt-[100px]"
+      className="flex relative flex-col justify-center items-center w-full pt-[100px] "
     >
       <div
         ref={StagDivRef}
