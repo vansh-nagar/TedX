@@ -13,7 +13,7 @@ import Link from "next/link"; // Assuming Next.js for client-side navigation wit
 
 const involvementOptions = [
   {
-    title: "Apply to Speak",
+    title: "Apply to be a Speaker",
     description:
       "TEDxBITJaipur is all about ideas worth spreading. If you're thinking of submitting an idea, we've compiled all the information and guidelines you need to prepare.",
     link: "/apply-for-speakers",
@@ -21,27 +21,19 @@ const involvementOptions = [
     buttonVariant: "default",
   },
   {
-    title: "Campus Ambassador",
+    title: "Become a Campus Ambassador",
     description:
       "Represent TEDxBITJaipur at your college or university. As a Campus Ambassador, you'll help spread ideas, promote events, and build a community of thinkers on your campus.",
-    link: "/apply-for-camput-ambassador",
+    link: "/campus-amb",
     linkText: "Apply Now",
     buttonVariant: "default",
   },
   {
-    title: "Volunteer",
+    title: "Become a Volunteer",
     description:
       "At TEDxBITJaipur, nothing we do is possible without our amazing team of volunteers—we call them TeamX. Find out more about how you can join our team and contribute on event day.",
     link: "/join-teamx",
     linkText: "More Info",
-    buttonVariant: "default",
-  },
-  {
-    title: "Partner with Us",
-    description:
-      "Support innovation and ideas by becoming a TEDxBITJaipur partner. We offer various partnership opportunities for organizations looking to engage with our diverse community of thinkers and changemakers.",
-    link: "/partner-with-us",
-    linkText: "Learn More",
     buttonVariant: "default",
   },
 ];
@@ -96,18 +88,18 @@ const page = () => {
       <div className=" py-16 sm:py-20 px-4 sm:px-8 lg:px-12 xl:px-24 text-foreground relative">
         <div className=" mx-auto">
           {/* Main Section Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-white">
             How to Get Involved
           </h2>
 
           {/* Three-column layout for involvement options */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {involvementOptions.map((option, index) => (
               <Card
                 key={index}
                 className="flex flex-col justify-between p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <CardHeader className="p-0 mb-4">
+                <CardHeader className="p-0 ">
                   <CardTitle className="text-2xl font-bold text-primary">
                     {option.title}
                   </CardTitle>

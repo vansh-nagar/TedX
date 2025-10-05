@@ -57,6 +57,7 @@ const responsibilitiesData = [
   "Provide timely and insightful updates to the TEDxBITJaipur outreach team, ensuring seamless communication and coordination.",
 ];
 
+//daksh
 const faqData = [
   {
     question: "Who is eligible to apply for the Campus Ambassador program?",
@@ -117,8 +118,8 @@ const page = () => {
               Become a Campus Ambassador
             </h1>
             <div className="max-w-4xl mx-auto mb-10">
-              <p className="text-xl sm:text-2xl font-light text-foreground text-center mb-3">
-                Campus Ambassador Program
+              <p className="text-xl sm:text-2xl  font-semibold text-foreground text-center mb-3">
+                TEDxBITJaipur Campus Ambassador Program
               </p>
               <div className="bg-[#EB0028] text-white py-4 px-8 shadow-2xl rounded-lg transform skew-y-[-1deg] text-center">
                 <p className="text-2xl sm:text-3xl font-extrabold tracking-wider transform skew-y-[1deg]">
@@ -148,7 +149,7 @@ const page = () => {
                 className="flex flex-col aspect-square items-center  justify-center    text-center p-1 bg-secondary border border-border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <benefit.icon className="h-12 w-12 text-[#EB0028]  animate-pulse" />
-                <CardTitle className="text-2xl font-bold text-[#EB0028]">
+                <CardTitle className="text-2xl font-bold ">
                   {benefit.title}
                 </CardTitle>
                 <CardContent className="p-0 text-base text-muted-foreground">
