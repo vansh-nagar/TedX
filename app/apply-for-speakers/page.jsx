@@ -499,35 +499,7 @@ const Page = () => {
           curiosity. Want a hint? Slide into our inbox — we just might share a
           glimpse into the world we’re weaving.
         </p>
-        <p className="mb-4 text-base sm:text-lg">
-          <span className="text-red text-3xl text-red-500 font-bold">
-            KEY DATES:
-          </span>
-          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
-            <li>
-              <strong>Applications Open:</strong> July 15, 2025
-            </li>
-            <li>
-              <strong>Last Date to Apply:</strong> August 30, 2025 -{" "}
-              <span className="animate-pulse shadow-red-600 text-red-500 font-bold">
-                Extended
-              </span>
-            </li>
-            <li>
-              <strong>Shortlisting & Communication:</strong> Late August 2025
-            </li>
-            <li>
-              <strong>Speaker Curation & Training:</strong> September – December
-              2025
-            </li>
-            <li>
-              <strong>Main Event:</strong> January 2026
-            </li>
-          </ul>
-        </p>
-        <p className="text-sm italic text-gray-400 ">
-          *Dates are tentative and may be updated without prior notice.
-        </p>
+
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfcDk9BrCnCN_s_b7gVw2VFBks80Dw-sKUWOgVgXeKeVOtMog/viewform?usp=dialog"

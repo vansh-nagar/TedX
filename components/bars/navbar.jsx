@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
-import { RiCloseLargeFill, RiMenuLine, RiArrowRightLine } from "@remixicon/react";
-import { Button } from "./ui/button";
+import React, { useState } from "react";
+import { RiCloseLargeFill, RiMenuLine } from "@remixicon/react";
+import { Button } from "../ui/button";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,12 +19,12 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed inset-x-0 top-4 z-[1000] flex justify-center px-4">
-        <div
-          
-          className="w-full max-w-7xl flex justify-between items-center px-6 py-4 gradient md:rounded-3xl shadow-xl backdrop-blur-xs"
-        >
+        <div className="w-full max-w-7xl flex justify-between items-center px-6 py-4 gradient md:rounded-3xl shadow-xl backdrop-blur-xs">
           {/* Logo */}
-          <a href="/" className="cursor-pointer flex items-center font-bold text-xl text-white">
+          <a
+            href="/"
+            className="cursor-pointer flex items-center font-bold text-xl text-white"
+          >
             <span className="text-red-500">
               TED<span className="align-super text-xs">x</span>
             </span>
@@ -76,7 +76,10 @@ const Navbar = () => {
             </a>
           ))}
 
-          <Button onClick={() => (window.location.href = "/CallForSpeaker")}> Get involved </Button>
+          <Button onClick={() => (window.location.href = "/CallForSpeaker")}>
+            {" "}
+            Get involved{" "}
+          </Button>
         </div>
       )}
     </>
