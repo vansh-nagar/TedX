@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link"; // Assuming Next.js for client-side navigation with <Link>
 
+//daksh
 const involvementOptions = [
   {
     title: "Apply to be a Speaker",

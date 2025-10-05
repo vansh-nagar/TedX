@@ -83,8 +83,6 @@ const faqData = [
 ];
 
 const page = () => {
-  const ApplicationLink = "YOUR_GOOGLE_FORM_LINK_HERE";
-
   return (
     <div className="bg-background min-h-screen pt-[160px] text-foreground">
       <style jsx global>{`
@@ -127,7 +125,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <LinkNext href={ApplicationLink} passHref>
+            <a href={"https://forms.gle/rR2Z5MHWhYuwTVMdA"}>
               <Button
                 size="xl"
                 className={`bg-[#EB0028] hover:bg-red-700 text-primary-foreground font-extrabold h-14 sm:h-16 text-xl sm:text-2xl transition-all duration-300 ease-in-out hover:scale-[1.03] shadow-lg hover:shadow-2xl px-10 rounded-full`}
@@ -135,7 +133,7 @@ const page = () => {
                 Apply Now
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
-            </LinkNext>
+            </a>
           </div>
         </header>
         <section>
@@ -206,7 +204,7 @@ const page = () => {
             Don't miss this opportunity to be at the forefront of sharing "Ideas
             Worth Spreading." Your journey as a Campus Ambassador starts here!
           </p>
-          <LinkNext href={ApplicationLink} passHref>
+          <a href={"https://forms.gle/rR2Z5MHWhYuwTVMdA"}>
             <Button
               size="xl"
               className={`bg-[#EB0028] hover:bg-red-700 text-primary-foreground font-extrabold h-16 text-xl sm:text-2xl transition-all duration-300 ease-in-out hover:scale-[1.05] shadow-xl hover:shadow-2xl px-12 rounded-full animate-bounce-slow`}
@@ -214,7 +212,7 @@ const page = () => {
               <ArrowRight className="mr-4 h-7 w-7" />
               Apply to be an Ambassador
             </Button>
-          </LinkNext>
+          </a>
         </section>
       </div>
     </div>
