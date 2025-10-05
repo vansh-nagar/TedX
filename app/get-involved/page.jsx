@@ -32,7 +32,7 @@ const involvementOptions = [
   {
     title: "Become a Volunteer",
     description:
-      "At TEDxBITJaipur, nothing we do is possible without our amazing team of volunteers—we call them TeamX. Find out more about how you can join our team and contribute on event day.",
+      "At TEDxBITJaipur, nothing we do is possible without our amazing team of volunteers. Find out more about how you can join our team and contribute on event day.",
     link: "/join-teamx",
     linkText: "More Info",
     buttonVariant: "default",
