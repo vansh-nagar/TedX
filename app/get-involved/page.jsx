@@ -41,17 +41,18 @@ const involvementOptions = [
 const page = () => {
   return (
     <div>
-      <img
-        src="https://i.pinimg.com/736x/6b/07/34/6b0734b008170511071242537fce89c7.jpg"
-        alt=""
-        className=" h-[85vh] w-full      object-cover"
-      />
+      <div className="relative h-[60vh] md:h-[85vh] w-full overflow-hidden">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5612AQG1TPbzjKLBtA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1696339002650?e=2147483647&v=beta&t=KoYAa-2KO3haBpdbo0HzIqi-Ll-vivWYWEv3naa4H4s"
+          alt="TEDx Talks background"
+          className=" h-full w-full object-cover"
+        />
+        
+      </div>
 
-      <div className="w-full bg-[#E62B1F] py-16 sm:py-20 px-4 sm:px-8 lg:px-12 xl:px-24">
-        {/* Content wrapper to center and control maximum width */}
+      <div className="w-full bg-[#E62B1F] py-10 sm:py-16 md:py-20 px-4 sm:px-8 lg:px-12 xl:px-24">
         <div className="max-w-6xl mx-auto text-white">
-          {/* Main Text Block */}
-          <p className="text-xl sm:text-2xl md:text-3xl font-medium mb-10 leading-relaxed drop-shadow-sm">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-8 md:mb-10 leading-relaxed drop-shadow-sm">
             There are lots of ways to be involved with the{" "}
             <b className="font-extrabold">TEDxBITJaipur</b> community to fit
             your passions and schedule, from helping to{" "}
@@ -62,12 +63,11 @@ const page = () => {
             <b className="font-extrabold">sharing your ideas from our stage</b>.
           </p>
 
-          <Separator className="bg-white/50 my-8 w-24" />
+          <Separator className="bg-white/50 my-6 md:my-8 w-16 md:w-24" />
 
-          {/* Quote Block */}
-          <div className="space-y-4">
-            <blockquote className="text-lg sm:text-xl md:text-2xl font-light italic  drop-shadow-sm">
-              “TEDxBITJaipur has been an incredible experience. I feel
+          <div className="space-y-3 md:space-y-4">
+            <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl font-light italic drop-shadow-sm">
+              "TEDxBITJaipur has been an incredible experience. I feel
               privileged to help enable unheard voices from the{" "}
               <b className="not-italic font-semibold">
                 Jaipur ecosystem and beyond
@@ -76,46 +76,44 @@ const page = () => {
               <b className="not-italic font-semibold">
                 new perspectives and ideas worth spreading
               </b>
-              .”
+              ."
             </blockquote>
 
-            <p className="text-base sm:text-lg font-bold pt-2">
+            <p className="text-sm sm:text-base md:text-lg font-bold pt-2">
               Daksh Gupta, Licensee & Organizer
             </p>
           </div>
         </div>
       </div>
 
-      <div className=" py-16 sm:py-20 px-4 sm:px-8 lg:px-12 xl:px-24 text-foreground relative">
-        <div className=" mx-auto">
-          {/* Main Section Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-white">
+      <div className="py-10 sm:py-16 md:py-20 px-4 sm:px-8 lg:px-12 xl:px-24 text-foreground relative">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 text-white">
             How to Get Involved
           </h2>
 
-          {/* Three-column layout for involvement options */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {involvementOptions.map((option, index) => (
               <Card
                 key={index}
-                className="flex flex-col justify-between p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex flex-col justify-between p-4 md:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <CardHeader className="p-0 ">
-                  <CardTitle className="text-2xl font-bold text-primary">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-xl md:text-2xl font-bold text-primary">
                     {option.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow p-0 mb-6 text-muted-foreground">
-                  <p>{option.description}</p>
+                <CardContent className="flex-grow p-0 my-4 text-muted-foreground">
+                  <p className="text-sm md:text-base">{option.description}</p>
                 </CardContent>
                 <CardFooter className="p-0">
                   <Link href={option.link} passHref>
                     <Button
-                      variant="default" // Primary button style
-                      className="w-full cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground flex items-center gap-2"
+                      variant="default"
+                      className="w-full cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground flex items-center justify-center gap-2"
                     >
-                      {option.linkText}
-                      <ArrowRight className="h-4 w-4" />
+                      <span>{option.linkText}</span>
+                      <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
                     </Button>
                   </Link>
                 </CardFooter>
