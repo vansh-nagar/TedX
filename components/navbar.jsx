@@ -1,89 +1,70 @@
 "use client";
 import React, { useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import DrawSVGPlugin from "gsap/DrawSVGPlugin";
-import {
-  RiCloseLargeFill,
-  RiMenuLine,
-  RiArrowRightLine,
-} from "@remixicon/react";
+import { RiCloseLargeFill, RiMenuLine, RiArrowRightLine } from "@remixicon/react";
+import { Button } from "./ui/button";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "https://www.ted.com/tedx/events/63850", label: "About Us" },
-  { href: "/Ourteam", label: "Team" },
-  { href: "/Partners", label: "Partners" },
+  { href: "/out-team", label: "Team" },
+  { href: "/partners", label: "Partners" },
   { href: "#", label: "Speakers" },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const box = useRef(null);
-
-  gsap.registerPlugin(DrawSVGPlugin);
-
-  useGSAP(() => {
-    const c = gsap.utils.selector(box);
-    gsap
-      .timeline()
-      .from(box.current, { y: -300, duration: 1, ease: "back.out" })
-      .to(box.current, { width: "98%", duration: 0.3, ease: "power4.out" })
-      .to(c(".link"), { opacity: 1, stagger: 0.001 });
-  }, []);
 
   const handleMenuToggle = () => setMenuOpen((open) => !open);
 
   return (
     <>
-      <div className="flex justify-center p-4 max-sm:p-0">
+      <div className="fixed inset-x-0 top-4 z-[1000] flex justify-center px-4">
         <div
-          ref={box}
-          className="h-20 w-20 flex justify-between px-6 items-center sm:top-4 fixed z-[1000] gradient md:rounded-3xl shadow-xl backdrop-blur-xs"
+          
+          className="w-full max-w-7xl flex justify-between items-center px-6 py-4 gradient md:rounded-3xl shadow-xl backdrop-blur-xs"
         >
-          <a href="/" className="cursor-pointer">
-            <div className="link flex items-center font-bold text-xl text-white opacity-0">
-              <span className="link text-red-500">
-                TED<span className="link align-super text-xs">x</span>
-              </span>
-              <span className="link text-white font-semibold">BITJaipur</span>
-            </div>
+          {/* Logo */}
+          <a href="/" className="cursor-pointer flex items-center font-bold text-xl text-white">
+            <span className="text-red-500">
+              TED<span className="align-super text-xs">x</span>
+            </span>
+            <span className="ml-2 text-white font-semibold">BITJaipur</span>
           </a>
+
           {/* Desktop Nav */}
           <div className="hidden sm:flex space-x-6 items-center">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="hover:text-red-500 link opacity-0 text-white/70 transition-all duration-100 cursor-pointer"
+                className="hover:text-red-500 text-white/80 transition-all duration-150 cursor-pointer"
               >
                 {link.label}
               </a>
             ))}
+
             <button
-              onClick={() => (window.location.href = "/CallForSpeaker")}
-              className="link cursor-pointer opacity-0 px-4 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-10 transition-all duration-300 overflow-hidden"
+              onClick={() => (window.location.href = "/get-involved")}
+              className="px-4 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl flex items-center gap-2  cursor-pointer"
               type="button"
             >
-              Call for Speakers
-              <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+              Get involved
             </button>
           </div>
+
           {/* Mobile Menu Button */}
           <div
-            className={`text-white link text-2xl cursor-pointer sm:hidden transition-opacity duration-300 ${menuOpen ? "opacity-100" : "opacity-0"}`}
+            className="sm:hidden text-white text-2xl cursor-pointer"
             onClick={handleMenuToggle}
           >
-            {menuOpen ? (
-              <RiCloseLargeFill className="link" />
-            ) : (
-              <RiMenuLine className="link" />
-            )}
+            {menuOpen ? <RiCloseLargeFill /> : <RiMenuLine />}
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-black text-white flex flex-col items-center justify-center space-y-8 z-40 transition-all duration-300 sm:hidden">
+        <div className="fixed top-0 left-0 w-full h-screen bg-background text-white flex flex-col items-center justify-center space-y-8 z-40 sm:hidden">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -95,15 +76,7 @@ const Navbar = () => {
             </a>
           ))}
 
-          <a
-            href="/CallForSpeaker"
-            className="px-6 py-2 shadow-md border-4 border-[#eb0028] text-white rounded-xl group relative flex gap-4 hover:pr-12 transition-all duration-300 overflow-hidden"
-            onClick={() => setMenuOpen(false)}
-            type="button"
-          >
-            Call for Speakers
-            <RiArrowRightLine className="w-4 absolute right-4 translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-          </a>
+          <Button onClick={() => (window.location.href = "/CallForSpeaker")}> Get involved </Button>
         </div>
       )}
     </>

@@ -1,7 +1,6 @@
 "use client";
 import { RiArrowRightLine } from "@remixicon/react";
 import React from "react";
-import { WavyBackground } from "@/components/ui/wavy-background";
 import {
   Accordion,
   AccordionContent,
@@ -478,9 +477,8 @@ const Page = () => {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen text-[#f7dcdc] mt-[100px] p-4 sm:p-6 md:p-10 max-sm:p-1">
-      <WavyBackground className="absolute inset-0 -z-10" />
       {/* Left Section */}
-      <div className="flex flex-col p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white z-50 mix-blend-difference">
+      <div className="flex flex-col p-4 sm:p-6 md:p-10 w-full md:w-1/2 justify-start text-white z-50 ">
         <h1 className="text-4xl sm:text-3xl md:text-4xl text-red-600 font-bold mb-4 ">
           <span> APPLY TO BE A</span>
           <br />{" "}
@@ -561,7 +559,6 @@ const Page = () => {
               <AccordionItem key={idx} value={`item-${idx}`}>
                 <AccordionTrigger>
                   <span className="flex items-center gap-2">
-                    <RiArrowRightLine className="text-red-600" />
                     {item.title.props.children.slice(1)}
                   </span>
                 </AccordionTrigger>
